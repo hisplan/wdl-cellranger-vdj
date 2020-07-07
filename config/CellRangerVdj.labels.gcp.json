@@ -1,0 +1,9 @@
+{
+    "pipelineType": "Test",
+    "project": "Project 123",
+    "sample": "S316",
+    "owner": "chunj",
+    "destination": "gs://chunj-cromwell/outputs/CellRangerVdj",
+    "transfer": "-",
+    "comment": "Cromwell+WDL Boilerplate"
+}

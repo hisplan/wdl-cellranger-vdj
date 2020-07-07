@@ -1,0 +1,19 @@
+{
+    "Vdj.sampleName": "Lmgp66_tet_replicate",
+    "Vdj.fastqNames": "1872_Lmgp66_tet_replicate_TCR_IGO_10914_1",
+    "Vdj.referenceGenome": "GRCm38",
+    "Vdj.fastqFiles": [
+        "s3://dp-lab-data/sc-seq/Project_10914/Lmgp66_tet_replicate_TCR/FASTQ/1872_Lmgp66_tet_replicate_TCR_IGO_10914_1_S1_L001_I1_001.fastq.gz",
+        "s3://dp-lab-data/sc-seq/Project_10914/Lmgp66_tet_replicate_TCR/FASTQ/1872_Lmgp66_tet_replicate_TCR_IGO_10914_1_S1_L001_R1_001.fastq.gz",
+        "s3://dp-lab-data/sc-seq/Project_10914/Lmgp66_tet_replicate_TCR/FASTQ/1872_Lmgp66_tet_replicate_TCR_IGO_10914_1_S1_L001_R2_001.fastq.gz",
+        "s3://dp-lab-data/sc-seq/Project_10914/Lmgp66_tet_replicate_TCR/FASTQ/1872_Lmgp66_tet_replicate_TCR_IGO_10914_1_S1_L002_I1_001.fastq.gz",
+        "s3://dp-lab-data/sc-seq/Project_10914/Lmgp66_tet_replicate_TCR/FASTQ/1872_Lmgp66_tet_replicate_TCR_IGO_10914_1_S1_L002_R1_001.fastq.gz",
+        "s3://dp-lab-data/sc-seq/Project_10914/Lmgp66_tet_replicate_TCR/FASTQ/1872_Lmgp66_tet_replicate_TCR_IGO_10914_1_S1_L002_R2_001.fastq.gz",
+        "s3://dp-lab-data/sc-seq/Project_10914/Lmgp66_tet_replicate_TCR/FASTQ/1872_Lmgp66_tet_replicate_TCR_IGO_10914_1_S1_L003_I1_001.fastq.gz",
+        "s3://dp-lab-data/sc-seq/Project_10914/Lmgp66_tet_replicate_TCR/FASTQ/1872_Lmgp66_tet_replicate_TCR_IGO_10914_1_S1_L003_R1_001.fastq.gz",
+        "s3://dp-lab-data/sc-seq/Project_10914/Lmgp66_tet_replicate_TCR/FASTQ/1872_Lmgp66_tet_replicate_TCR_IGO_10914_1_S1_L003_R2_001.fastq.gz",
+        "s3://dp-lab-data/sc-seq/Project_10914/Lmgp66_tet_replicate_TCR/FASTQ/1872_Lmgp66_tet_replicate_TCR_IGO_10914_1_S1_L004_I1_001.fastq.gz",
+        "s3://dp-lab-data/sc-seq/Project_10914/Lmgp66_tet_replicate_TCR/FASTQ/1872_Lmgp66_tet_replicate_TCR_IGO_10914_1_S1_L004_R1_001.fastq.gz",
+        "s3://dp-lab-data/sc-seq/Project_10914/Lmgp66_tet_replicate_TCR/FASTQ/1872_Lmgp66_tet_replicate_TCR_IGO_10914_1_S1_L004_R2_001.fastq.gz"
+    ]
+}

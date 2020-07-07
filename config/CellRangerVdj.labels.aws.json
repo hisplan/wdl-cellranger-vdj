@@ -1,0 +1,9 @@
+{
+    "pipelineType": "Cell Ranger V(D)J",
+    "project": "Project 27",
+    "sample": "Lmgp66_tet_replicate",
+    "owner": "chunj",
+    "destination": "s3://dp-lab-batch/outputs/CellRangerVdj/Lmgp66_tet_replicate",
+    "transfer": "-",
+    "comment": "Cell Ranger V(D)J"
+}
