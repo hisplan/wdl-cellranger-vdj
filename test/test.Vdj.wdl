@@ -19,20 +19,18 @@ workflow Vdj {
             referenceGenome = referenceGenome
     }
 
-    # output {
-    #     Array[File] annotationFiles = Vdj.annotationFiles
-    #     Array[File] fastaFiles = Vdj.fastaFiles
-    #     Array[File] fastqFiles = Vdj.fastqFiles
-    #     Array[File] bamFiles = Vdj.bamFiles
-    #     File cellBarcodes = Vdj.cellBarcodes
-    #     File vloupe = Vdj.vloupe        
-    #     File webSummary = Vdj.webSummary
-    #     File metricsSummary = Vdj.metricsSummary
-    #     File clonotypes = Vdj.clonotypes
-    #     File pipestance = Vdj.pipestance
+    output {
+        Array[File] annotationFiles = Vdj.annotationFiles
+        Array[File] fastaFiles = Vdj.fastaFiles
+        Array[File] fastqFiles = Vdj.fastqFiles
+        Array[File] bamFiles = Vdj.bamFiles
+        File cellBarcodes = Vdj.cellBarcodes
+        File vloupe = Vdj.vloupe
+        File webSummary = Vdj.webSummary
+        File metricsSummary = Vdj.metricsSummary
+        File clonotypes = Vdj.clonotypes
+        File pipestance = Vdj.pipestance
 
-    #     # Array[File] debugFiles = Vdj.debugFiles
-    #     File log = sampleName + "/_log"
-    #     File perf = sampleName + "/_perf"
-    # }
+        File debugFile = "debug.tgz"
+    }
 }
