@@ -2,7 +2,7 @@
     "CellRangerVdj.sampleName": "Lmgp66_tet_replicate",
     "CellRangerVdj.fastqNames": "1872_Lmgp66_tet_replicate_TCR_IGO_10914_1",
     "CellRangerVdj.referenceGenome": "GRCm38",
-    "CellRangerVdj.fastqFiles": [
+    "CellRangerVdj.inputFastq": [
         "s3://dp-lab-data/sc-seq/Project_10914/Lmgp66_tet_replicate_TCR/FASTQ/1872_Lmgp66_tet_replicate_TCR_IGO_10914_1_S1_L001_I1_001.fastq.gz",
         "s3://dp-lab-data/sc-seq/Project_10914/Lmgp66_tet_replicate_TCR/FASTQ/1872_Lmgp66_tet_replicate_TCR_IGO_10914_1_S1_L001_R1_001.fastq.gz",
         "s3://dp-lab-data/sc-seq/Project_10914/Lmgp66_tet_replicate_TCR/FASTQ/1872_Lmgp66_tet_replicate_TCR_IGO_10914_1_S1_L001_R2_001.fastq.gz",
