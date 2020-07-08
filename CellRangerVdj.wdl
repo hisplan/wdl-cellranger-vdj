@@ -31,8 +31,6 @@ workflow CellRangerVdj {
         File clonotypes = Vdj.clonotypes
         File pipestance = Vdj.pipestance
 
-        # Array[File] debugFiles = Vdj.debugFiles
-        File log = Vdj.log
-        File perf = Vdj.perf
+        File debugFile = Vdj.debugFile
     }
 }
