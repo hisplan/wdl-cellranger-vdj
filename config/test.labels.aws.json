@@ -1,0 +1,9 @@
+{
+    "pipelineType": "Cell Ranger V(D)J",
+    "project": "Project Dev",
+    "sample": "Test",
+    "owner": "chunj",
+    "destination": "s3://dp-lab-batch/outputs/CellRangerVdj/Test",
+    "transfer": "-",
+    "comment": "Cell Ranger V(D)J"
+}
