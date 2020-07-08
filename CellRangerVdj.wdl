@@ -7,7 +7,7 @@ workflow CellRangerVdj {
     input {
         String sampleName
         String fastqNames
-        Array[File] fastqFiles
+        Array[File] inputFastq
         String referenceGenome
     }
 
@@ -15,11 +15,24 @@ workflow CellRangerVdj {
         input:
             sampleName = sampleName,
             fastqNames = fastqNames,
-            fastqFiles = fastqFiles,
+            inputFastq = inputFastq,
             referenceGenome = referenceGenome
     }
 
     output {
-        Array[File] outs = Vdj.outs
+        Array[File] annotationFiles = Vdj.annotationFiles
+        Array[File] fastaFiles = Vdj.fastaFiles
+        Array[File] fastqFiles = Vdj.fastqFiles
+        Array[File] bamFiles = Vdj.bamFiles
+        File cellBarcodes = Vdj.cellBarcodes
+        File vloupe = Vdj.vloupe
+        File webSummary = Vdj.webSummary
+        File metricsSummary = Vdj.metricsSummary
+        File clonotypes = Vdj.clonotypes
+        File pipestance = Vdj.pipestance
+
+        # Array[File] debugFiles = Vdj.debugFiles
+        File log = Vdj.log
+        File perf = Vdj.perf
     }
 }
