@@ -1,5 +1,5 @@
 {
-    "pipelineType": "Cell Ranger V(D)J",
+    "pipelineType": "CellRangerVdj",
     "project": "Project Dev",
     "sample": "Test",
     "owner": "chunj",
