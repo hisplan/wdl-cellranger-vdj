@@ -28,7 +28,6 @@ task Vdj {
 
         # run pipeline
         cellranger vdj \
-            --uiport=3600 \
             --id=~{sampleName} \
             --sample ~{fastqNames} \
             --reference /opt/refdata-cellranger-vdj-~{referenceGenome}-alts-ensembl-~{cellRangerVersion} \
