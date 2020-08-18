@@ -29,9 +29,6 @@ then
     exit 1
 fi
 
-rm -rf CellRangerVdj.deps.zip
-zip CellRangerVdj.deps.zip modules modules/*
-
 cromwell-tools submit \
     --secrets-file ${service_account_key} \
     --wdl CellRangerVdj.wdl \
