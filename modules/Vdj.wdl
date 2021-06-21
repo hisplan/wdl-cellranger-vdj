@@ -33,7 +33,7 @@ task Vdj {
             --id=~{sampleName} \
             --sample ~{fastqNames} \
             --reference /opt/refdata-cellranger-vdj-~{referenceGenome}-alts-ensembl-~{referenceVersion} \
-            --fastq=${path_input}
+            --fastqs=${path_input}
 
         find ./~{sampleName}
 
