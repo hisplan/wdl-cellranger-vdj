@@ -3,7 +3,7 @@
 ## Setup
 
 ```bash
-aws s3 cp s3://dp-lab-home/software/install-CellRangerVdj-6.0.1.sh - | bash
+aws s3 cp s3://dp-lab-home/software/install-CellRangerVdj-6.0.2.sh - | bash
 ```
 
 ```
