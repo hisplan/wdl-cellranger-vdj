@@ -31,7 +31,7 @@ conda activate cromwell
 
 ./submit.sh \
     -k ~/secrets-aws.json \
-    -i config/Lmgp66_tet_replicate.inputs.aws.json \
-    -l config/Lmgp66_tet_replicate.labels.aws.json \
+    -i configs/Lmgp66_tet_replicate.inputs.aws.json \
+    -l configs/Lmgp66_tet_replicate.labels.aws.json \
     -o CellRangerVdj.options.aws.json
 ```
