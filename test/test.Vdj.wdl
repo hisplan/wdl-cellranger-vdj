@@ -31,6 +31,6 @@ workflow Vdj {
         File clonotypes = Vdj.clonotypes
         File pipestance = Vdj.pipestance
 
-        File debugFile = "debug.tgz"
+        File debugFile = Vdj.debugFile
     }
 }
