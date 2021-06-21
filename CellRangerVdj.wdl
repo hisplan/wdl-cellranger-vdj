@@ -29,8 +29,10 @@ workflow CellRangerVdj {
         File webSummary = Vdj.webSummary
         File metricsSummary = Vdj.metricsSummary
         File clonotypes = Vdj.clonotypes
-        File pipestance = Vdj.pipestance
+        File airr = Vdj.airr
+        File allContigProtoBuf = Vdj.allContigProtoBuf
 
+        File pipestance = Vdj.pipestance
         File debugFile = Vdj.debugFile
     }
 }

@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-version="3.1.0_a1"
+version="6.0.1"
 workflow_name="CellRangerVdj"
 
 #

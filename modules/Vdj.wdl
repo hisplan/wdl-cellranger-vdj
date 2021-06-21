@@ -9,8 +9,10 @@ task Vdj {
         String referenceGenome
     }
 
-    String cellRangerVersion = "3.1.0"
-    String dockerImage = "hisplan/cellranger:" + cellRangerVersion
+    String cellRangerVersion = "6.0.1"
+    String referenceVersion = "5.0.0"
+
+    String dockerImage = "hisplan/cromwell-cellranger:" + cellRangerVersion
     Float inputSize = size(inputFastq, "GiB")
 
     # ~{sampleName} : the top-level output directory containing pipeline metadata
@@ -30,7 +32,7 @@ task Vdj {
         cellranger vdj \
             --id=~{sampleName} \
             --sample ~{fastqNames} \
-            --reference /opt/refdata-cellranger-vdj-~{referenceGenome}-alts-ensembl-~{cellRangerVersion} \
+            --reference /opt/refdata-cellranger-vdj-~{referenceGenome}-alts-ensembl-~{referenceVersion} \
             --fastq=${path_input}
 
         find ./~{sampleName}
@@ -44,7 +46,6 @@ task Vdj {
         # - All contig annotations (JSON):                    ./${sample-name}/outs/all_contig_annotations.json
         # - All contig annotations (BED):                     ./${sample-name}/outs/all_contig_annotations.bed
         # - All contig annotations (CSV):                     ./${sample-name}/outs/all_contig_annotations.csv
-        # - Clonotype consensus annotations (JSON):           ./${sample-name}/outs/consensus_annotations.json
         # - Clonotype consensus annotations (CSV):            ./${sample-name}/outs/consensus_annotations.csv
 
         Array[File] fastaFiles = glob(outBase + "/*.fasta*")
@@ -81,6 +82,12 @@ task Vdj {
 
         File clonotypes = outBase + "/clonotypes.csv"
         # ./${sample-name}/outs/clonotypes.csv
+
+        File airr = outBase + "/airr_rearrangement.tsv"
+        # AIRR Rearrangement TSV
+
+        File allContigProtoBuf = outBase + "/vdj_contig_info.pb"
+        # All contig info (ProtoBuf format)
 
         File pipestance = sampleName + "/" + sampleName + ".mri.tgz"
         # ./${sample-name}/Lmgp66_tet_replicate.mri.tgz
