@@ -17,7 +17,7 @@ pip install cromwell-tools
 Update `secrets.json` with your Cromwell Server address and credentials:
 
 ```bash
-$ cat ~/secrets.json
+$ cat secrets.json
 {
     "url": "http://ec2-100-26-170-43.compute-1.amazonaws.com",
     "username": "****",
@@ -33,8 +33,8 @@ Submit your job:
 conda activate cromwell
 
 ./submit.sh \
-    -k ~/secrets-aws.json \
-    -i configs/Lmgp66_tet_replicate.inputs.aws.json \
-    -l configs/Lmgp66_tet_replicate.labels.aws.json \
+    -k secrets-aws.json \
+    -i configs/sample.inputs.aws.json \
+    -l configs/sample.labels.aws.json \
     -o CellRangerVdj.options.aws.json
 ```
