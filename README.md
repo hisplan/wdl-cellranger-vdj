@@ -1,4 +1,6 @@
-# WDLized Cell Ranger V(D)J
+# wdl-cellranger-vdj
+
+WDLized Cell Ranger V(D)J
 
 ## Setup
 
@@ -6,12 +8,13 @@
 aws s3 cp s3://dp-lab-home/software/install-CellRangerVdj-6.0.2.sh - | bash
 ```
 
-```
-$ conda create -n cromwell python=3.7.6 pip
-$ pip install cromwell-tools
+```bash
+conda create -n cromwell python=3.7.6 pip
+conda activate cromwell
+pip install cromwell-tools
 ```
 
-Update `secrets.json` with the new Cromwell Server address:
+Update `secrets.json` with your Cromwell Server address and credentials:
 
 ```bash
 $ cat ~/secrets.json
