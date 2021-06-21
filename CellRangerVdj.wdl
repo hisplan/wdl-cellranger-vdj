@@ -31,6 +31,7 @@ workflow CellRangerVdj {
         File clonotypes = Vdj.clonotypes
         File airr = Vdj.airr
         File allContigProtoBuf = Vdj.allContigProtoBuf
+        File vdjReference = Vdj.vdjReference
 
         File pipestance = Vdj.pipestance
         File debugFile = Vdj.debugFile
