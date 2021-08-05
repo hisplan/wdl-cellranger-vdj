@@ -9,6 +9,9 @@ workflow Vdj {
         String fastqNames
         Array[File] inputFastq
         String referenceGenome
+
+        # docker-related
+        String dockerRegistry
     }
 
     call Vdj.Vdj {
@@ -16,7 +19,8 @@ workflow Vdj {
             sampleName = sampleName,
             fastqNames = fastqNames,
             inputFastq = inputFastq,
-            referenceGenome = referenceGenome
+            referenceGenome = referenceGenome,
+            dockerRegistry = dockerRegistry
     }
 
     output {
@@ -33,7 +37,6 @@ workflow Vdj {
         File allContigProtoBuf = Vdj.allContigProtoBuf
         File vdjReference = Vdj.vdjReference
 
-        File pipestance = Vdj.pipestance
-        File debugFile = Vdj.debugFile
+        File pipestanceMeta = Vdj.pipestanceMeta
     }
 }

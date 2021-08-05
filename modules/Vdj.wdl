@@ -7,12 +7,15 @@ task Vdj {
         String fastqNames
         Array[File] inputFastq
         String referenceGenome
+
+        # docker-related
+        String dockerRegistry
     }
 
     String cellRangerVersion = "6.0.2"
     String referenceVersion = "5.0.0"
 
-    String dockerImage = "hisplan/cromwell-cellranger:" + cellRangerVersion
+    String dockerImage = dockerRegistry + "/cromwell-cellranger:" + cellRangerVersion
     Float inputSize = size(inputFastq, "GiB")
 
     # ~{sampleName} : the top-level output directory containing pipeline metadata
@@ -36,8 +39,6 @@ task Vdj {
         find ./~{sampleName}
 
         tar cvzf vdj_reference.tgz ~{outBase}/vdj_reference/*
-
-        tar cvzf debug.tgz ./~{sampleName}/_*
     >>>
 
     output {
@@ -54,8 +55,7 @@ task Vdj {
         File allContigProtoBuf = outBase + "/vdj_contig_info.pb"
         File vdjReference = "vdj_reference.tgz"
 
-        File pipestance = sampleName + "/" + sampleName + ".mri.tgz"
-        File debugFile = "debug.tgz"
+        File pipestanceMeta = sampleName + "/" + sampleName + ".mri.tgz"
     }
 
     runtime {
