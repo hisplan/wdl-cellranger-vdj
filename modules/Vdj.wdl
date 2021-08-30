@@ -7,6 +7,7 @@ task Vdj {
         String fastqNames
         Array[File] inputFastq
         String referenceGenome
+        String chain = "auto"
 
         # docker-related
         String dockerRegistry
@@ -34,7 +35,8 @@ task Vdj {
             --id=~{sampleName} \
             --sample ~{fastqNames} \
             --reference /opt/refdata-cellranger-vdj-~{referenceGenome}-alts-ensembl-~{referenceVersion} \
-            --fastqs=${path_input}
+            --fastqs=${path_input} \
+            --chain ~{chain}
 
         find ./~{sampleName}
 

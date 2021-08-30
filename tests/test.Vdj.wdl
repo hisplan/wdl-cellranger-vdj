@@ -9,6 +9,7 @@ workflow Vdj {
         String fastqNames
         Array[File] inputFastq
         String referenceGenome
+        String chain = "auto"
 
         # docker-related
         String dockerRegistry
@@ -20,6 +21,7 @@ workflow Vdj {
             fastqNames = fastqNames,
             inputFastq = inputFastq,
             referenceGenome = referenceGenome,
+            chain = chain,
             dockerRegistry = dockerRegistry
     }
 
