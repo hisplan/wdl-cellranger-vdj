@@ -2,7 +2,7 @@
 
 wf_name="cellranger-vdj"
 version="6.0.2"
-files="submit.sh CellRangerVdj.deps.zip CellRangerVdj.wdl CellRangerVdj.options.aws.json"
+files="submit.sh CellRangerVdj.deps.zip CellRangerVdj.wdl CellRangerVdj.options.aws.json configs/template.*.json"
 dest="$HOME/scing/bin"
 
 usage()
@@ -36,7 +36,7 @@ mkdir -p ${dest}
 # create a temporary directory and copy files
 path_workdir=`mktemp -d`
 mkdir -p ${path_workdir}/${wf_name}-${version}
-cp ${files} ${path_workdir}/${wf_name}-${version}/
+rsync -Rv ${files} ${path_workdir}/${wf_name}-${version}/
 
 # tar-gzip
 cd ${path_workdir}
