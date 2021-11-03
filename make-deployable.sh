@@ -1,7 +1,7 @@
 #!/bin/bash -e
 
 wf_name="cellranger-vdj"
-version="6.0.2"
+version="6.1.1"
 files="submit.sh CellRangerVdj.deps.zip CellRangerVdj.wdl CellRangerVdj.options.aws.json configs/template.*.json"
 dest="$HOME/scing/bin"
 
