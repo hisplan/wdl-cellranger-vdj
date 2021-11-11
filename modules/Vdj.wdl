@@ -13,7 +13,7 @@ task Vdj {
         String dockerRegistry
     }
 
-    String cellRangerVersion = "6.1.1"
+    String cellRangerVersion = "6.1.2"
     String referenceVersion = "5.0.0"
 
     String dockerImage = dockerRegistry + "/cromwell-cellranger:" + cellRangerVersion
