@@ -1,0 +1,9 @@
+{
+    "pipelineType": "CellRangerVdj",
+    "project": "DEVTEST",
+    "sample": "Human B cells/Healthy Donor",
+    "owner": "chunj",
+    "destination": "s3://dp-lab-gwf-core/outputs/cr-vdj-results/",
+    "transfer": "skip",
+    "comment": ""
+}
